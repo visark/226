@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Button Interaction CHAT GPT created!</title>
+    <style>
+        input {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CHAT GPT Created</h1>
+    <form>
+        <!-- Example of a text input -->
+        <label for="userInput">Enter something:</label>
+        <input type="text" id="userInput" name="userInput" placeholder="Type here...">
+        <br><br>
+        <!-- Button with an ID -->
+        <button id="submitBtn" type="button">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript function that is triggered on button click
+        document.getElementById("submitBtn").onclick = function() {
+            // Get user input value
+            const userInput = document.getElementById("userInput").value;
+            
+            // Display input in an alert
+            alert("You entered: " + userInput);
+
+            // Change the input style (background color)
+            document.getElementById("userInput").style.backgroundColor = "#f0f8ff"; // Light blue background
+        };
+    </script>
+</body>
+</html>
+
